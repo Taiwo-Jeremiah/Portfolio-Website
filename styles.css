@@ -86,7 +86,7 @@ header {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     position: fixed;
     top: 0;
     background-color: transparent;
@@ -337,13 +337,12 @@ nav{
     color: #fff;
 }
 
-.download-cv-btn {
-    display: block;
+#download-cv-btn {
     font-size: 18px;
-    /* color: #1c1e22; */
     color: #c4cfde;
     padding: 10px 30px;
     height: 50px;
+    width: auto;
     outline: 0;
     border: 0;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -355,7 +354,7 @@ nav{
     cursor: pointer;
 }
 
-.download-cv-btn:hover {
+#download-cv-btn:hover {
     color: #fff;
     border: 1px solid #ff014f;
     background: var(--secondary-background);
@@ -404,11 +403,8 @@ section {
 .about-me-img {
     flex-basis: 37%;
     background-color: var(--secondary-background);
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-items: flex-end; */
     padding-top: 1rem;
-    /* text-align: center; */
+    /* text-align: center; */x
 }
 
 
@@ -916,7 +912,7 @@ form,
 
 @media (min-width:1000px) {
     header{
-        padding: 20px 60px;
+        padding: 20px ;
     }
 }
 
@@ -1044,12 +1040,14 @@ form,
     }
 
     .hero{
-        padding-top: 26rem;
+        /* padding-top: 26rem; */
     }
 
     .hero .row {
        flex-direction: column-reverse;
+       padding-top: 3rem;
        gap: 4rem;
+       height: auto;
     }
 
     .hero-img {
@@ -1069,11 +1067,7 @@ form,
     }
 
     section {
-        margin-bottom: 4rem;
-    }
-
-    .about-me {
-        /* padding-top: 7rem; */
+        margin-bottom: 0;
     }
 
     .about-me .row {
