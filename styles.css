@@ -224,7 +224,7 @@ nav{
 }
 
 .hero .row{
-    min-height: 100dvh;
+    height: 100vh;
     flex-wrap: nowrap;
 }
 
