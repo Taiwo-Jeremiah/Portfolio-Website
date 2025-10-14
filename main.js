@@ -48,12 +48,12 @@ const sr = ScrollReveal({
     duration: 2500,
     delay: 400,
   })
-  sr.reveal('.hero-title', {delay:900, origin: 'left',duration: 2000,distance: '600px'})
-  sr.reveal('.hero-description', {delay:1200, origin: 'right', distance: '600px'})
-  sr.reveal('.social-media-icons', {delay:1600, origin: 'bottom',distance: '600px'})
-  sr.reveal('.hero-subtitle', { origin: 'bottom',duration: 500, distance: '600px'})
+  sr.reveal('.hero-title', {delay:400, origin: 'top',duration: 2000,distance: '60px'})
+  sr.reveal('.hero-description', {delay:400, origin: 'top', distance: '60px'})
+  sr.reveal('.social-media-icons', {delay:400, origin: 'top',distance: '60px'})
+  sr.reveal('.hero-subtitle', {delay:400, origin: 'top',duration: 500, distance: '60px'})
   sr.reveal('.hero-content')
-  sr.reveal('.hero-img', {delay:1000, origin: 'bottom', distance: '600px', duration: 3500,})
+  sr.reveal('.hero-img', {delay:400, origin: 'bottom', distance: '60px', duration: 2500,})
   sr.reveal('.about-me-img', { origin: 'left', interval: 100})
   sr.reveal('.about-me-content ', { origin: 'right', interval: 100})
   sr.reveal('.project-box, .service-box')
