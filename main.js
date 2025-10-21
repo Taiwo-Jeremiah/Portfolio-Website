@@ -10,18 +10,15 @@ const openMenus = document.querySelector(".fa-bars");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-links")
 function openMenu() {
-  console.log("Menu opened"); // Changed message for clarity
   navMenu.classList.add("open-menu");
 }
 
 function closeMenu() {
-  console.log("Menu closed"); // Changed message for clarity
   navMenu.classList.remove("open-menu");
 }
 
 navLinks.forEach(link => {
   link.addEventListener("click", function() {
-    console.log("open menu removed!");
     navMenu.classList.remove("open-menu");
   });
 });

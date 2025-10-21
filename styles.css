@@ -73,7 +73,7 @@ img {
 .row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -220,11 +220,13 @@ nav{
     margin:0 auto 2rem;
 }
 .hero{
-    padding-top: 70px;
+    /* padding-top: 70px; */
+     height: calc(100dvh - 100px);
+     overflow: hidden;
 }
 
 .hero .row{
-    height: 100vh;
+    height: 100%;
     flex-wrap: nowrap;
 }
 
