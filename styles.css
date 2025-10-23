@@ -957,7 +957,7 @@ form,
     } */
     .hero {
     flex-direction: row;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .hero-img img {
