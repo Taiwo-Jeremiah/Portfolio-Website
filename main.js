@@ -155,3 +155,12 @@ window.addEventListener('click', (event) => {
     closeModal();
   }
 });
+
+function setHeroHeight() {
+  const hero = document.querySelector('.hero');
+  hero.style.minHeight = `${window.innerHeight - 100}px`;
+}
+
+setHeroHeight();
+window.addEventListener('resize', setHeroHeight);
+
