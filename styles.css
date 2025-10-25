@@ -239,6 +239,7 @@ nav {
 .hero-content {
   flex-basis: 58%;
   vertical-align: middle;
+  text-align: center;
 }
 
 .hero-subtitle {
@@ -272,9 +273,9 @@ nav {
 }
 
 .hero-description {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 30px;
-  padding-right: 14%;
+  /* padding-right: 14%; */
   opacity: 0.9;
   color: var(--color-2);
   margin: 0 0 30px;
@@ -308,11 +309,12 @@ nav {
   flex-wrap: wrap;
   margin: 0 0 30px;
   position: relative;
+  justify-content: center;
 }
 
 .social-media-icons span {
   display: block;
-  font-size: 14px;
+  font-size: 18px;
   font-family: var(--font-montserrat);
   font-weight: 500;
   color: #878e99;
@@ -479,11 +481,12 @@ section {
 }
 
 .about-me-content .description {
-  font-size: 1rem;
-  font-family: var(--font-montserrat);
-  color: var(--color-2);
-  line-height: 21px;
-  margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-family: var(--font-montserrat);
+    color: var(--color-2);
+    line-height: 21px;
+    margin-bottom: 1rem;
+    line-height: 26px;
 }
 
 .about-me-content .description a {
@@ -492,7 +495,7 @@ section {
 }
 
 .skill span {
-  font-size: 14px;
+  font-size: 16px;
   color: #f9004d;
   margin: 0 0 15px;
   display: block;
@@ -584,6 +587,10 @@ section {
   padding: 0 1.5rem;
 }
 
+.project-box-content .row{
+    justify-content: space-between;
+}
+
 .project-box-content .row span,
 .project-box-content .row span a {
   font-size: 12px;
@@ -598,7 +605,7 @@ section {
 .project-description {
   color: #c4cfde;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   padding-bottom: 1rem;
   line-height: 43px;
@@ -744,6 +751,7 @@ section {
   font-size: 16px;
   line-height: 1.4rem;
   margin-bottom: 10px;
+  line-height: 26px;
 }
 
 .contact-content {
@@ -926,43 +934,58 @@ form,
   .hero {
     flex-direction: row;
     padding-top: 3rem;
-    height: 100vh;
     flex-wrap: nowrap;
     gap: 3rem;
   }
 
-    .hero-img img {
+  .hero-img img {
     width: 600px;
     height: 600px;
   }
 
   #download-cv-btn {
-  font-size: 30px;
-  height: 80px;
+    font-size: 30px;
+    height: 80px;
+  }
+
+  .social-media-icons span {
+    font-size: 22px;
+  }
+
+  .social-media-icons a {
+    font-size: 25px;
+  }
 }
 
-.social-media-icons span {
-  font-size: 22px;
+@media (min-width: 1300px) {
+  .hero {
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+  .hero-description {
+    padding-right: 14%;
+  }
+
+  .social-media-icons {
+    justify-content: start;
+}
 }
 
-.social-media-icons a {
-  font-size: 25px;
-}
-
-}
-
-@media (min-width: 1200px){
-    /* .container{
+@media (min-width: 1200px) {
+  /* .container{
         max-width: 1400px;
     } */
-    .hero {
-    flex-direction: row;
-    /* height: 100vh; */
+  .hero {
+    padding-top: 7rem;
   }
 
   .hero-img img {
-    width: 50px;
-    height: 50px;
+    width: 500px;
+    height: 500px;
   }
 }
 
@@ -972,9 +995,13 @@ form,
   }
 
   .hero-img img {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
   }
+
+    .service-box ul li {
+    font-size: 1.4rem;
+}
 }
 
 @media (max-width: 950px) {
@@ -995,6 +1022,10 @@ form,
     align-items: flex-start;
     row-gap: 1.5rem;
   }
+ .service-box ul li {
+    font-size: 1.4rem;
+}
+   
 }
 
 @media (max-width: 900px) {
@@ -1009,6 +1040,9 @@ form,
   .typing-text {
     font-size: 35px;
   }
+    .service-box ul li {
+    font-size: 22px;
+}
 }
 
 @media (min-width: 800px) {
@@ -1021,6 +1055,12 @@ form,
   .fa-bars::before {
     display: none;
     content: "";
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+  .hero {
+    padding-top: 10rem;
   }
 }
 
@@ -1148,6 +1188,9 @@ form,
   .service-box {
     flex-basis: 48%;
   }
+   .service-box ul li {
+    font-size: 20px;
+}
 
   .service-container {
     row-gap: 1.5rem;
@@ -1156,16 +1199,20 @@ form,
 
 @media (max-width: 600px) {
   .hero-title {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .typing-text {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .hero-img img {
-    width: 380px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero-description{
+    font-size: 22px;
   }
 
   .service-box {
@@ -1175,6 +1222,8 @@ form,
   .contact-form .row .form-group {
     flex-basis: 100%;
   }
+
+ 
 }
 
 @media (max-width: 400px) {
