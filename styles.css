@@ -1158,14 +1158,16 @@ form,
 
   .hero-description {
     padding-right: 0;
-  }
-
-  .social-media-icons {
-    justify-content: center;
+    font-size: 18px;
+    width:80%
   }
 
   section {
     margin-bottom: 0;
+  }
+
+  section .hero {
+   min-height: unset;
   }
 
   .about-me .row {
@@ -1189,7 +1191,7 @@ form,
     flex-basis: 48%;
   }
    .service-box ul li {
-    font-size: 20px;
+    font-size: 18px;
 }
 
   .service-container {
@@ -1212,7 +1214,7 @@ form,
   }
 
   .hero-description{
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .service-box {
