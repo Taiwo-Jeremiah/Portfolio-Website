@@ -974,9 +974,6 @@ form,
     justify-content: start;
   }
 
-  .hero-description {
-    width:80% ;
-  }
 
 }
 
@@ -1048,6 +1045,7 @@ form,
     .service-box ul li {
     font-size: 22px;
 }
+
 }
 
 @media (min-width: 800px) {
@@ -1066,6 +1064,9 @@ form,
 @media (min-width: 800px) and (max-width: 1300px) {
   .hero {
     padding-top: 10rem;
+  }
+.hero-description {
+    width:80% ;
   }
 }
 
