@@ -972,7 +972,12 @@ form,
 
   .social-media-icons {
     justify-content: start;
-}
+  }
+
+  .hero-description {
+    width:80% ;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -1159,8 +1164,12 @@ form,
   .hero-description {
     padding-right: 0;
     font-size: 18px;
-    width:80%
   }
+
+.about-me-content .description {
+    font-size: 18px;
+}
+
 
   section {
     margin-bottom: 0;
