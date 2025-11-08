@@ -156,11 +156,11 @@ window.addEventListener('click', (event) => {
   }
 });
 
-function setHeroHeight() {
-  const hero = document.querySelector('.hero');
-  hero.style.minHeight = `${window.innerHeight - 100}px`;
-}
+// function setHeroHeight() {
+//   const hero = document.querySelector('.hero');
+//   hero.style.minHeight = `${window.innerHeight - 100}px`;
+// }
 
-setHeroHeight();
-window.addEventListener('resize', setHeroHeight);
+// setHeroHeight();
+// window.addEventListener('resize', setHeroHeight);
 
